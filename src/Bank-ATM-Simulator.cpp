@@ -29,7 +29,7 @@ int deposit_money(int* ptr){
     *ptr += deposit_amount;
 }
 
-int withdrawal_money(int* ptr){
+int withdraw_money(int* ptr){
     int withdrawal_amount = 0;
     cout << "Please input the amount of money you want to withdraw: ";
     cin >> withdrawal_amount;
