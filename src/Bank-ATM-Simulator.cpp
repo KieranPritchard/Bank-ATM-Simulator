@@ -21,11 +21,18 @@ int balence_inquiry(int* ptr){
     cout << "Your Balance Is: £" << &ptr << endl;
 }
 
+int deposit_money(int* ptr){
+    int deposit_amount = 0;
+    cout << "Please input the amount of money you want to deposit: ";
+    
+    cin >> deposit_amount;
+    *ptr += deposit_amount;
+}
+
 int main(){
 
     // Keeps looping until login() is true
     while (!login()){
-        
     }
 
     // Loops intill option 4 is used
@@ -50,7 +57,7 @@ int main(){
             break;
         
         case 2:
-            deposit_money();
+            deposit_money(ptr);
             break;
         
         case 3:
