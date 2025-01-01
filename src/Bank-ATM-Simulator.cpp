@@ -17,11 +17,15 @@ bool login(){
     }
 }
 
+int balence_inquiry(int* ptr){
+    cout << "Your Balance Is: £" << &ptr << endl;
+}
+
 int main(){
 
     // Keeps looping until login() is true
-    while (login() == false){
-        login();
+    while (!login()){
+        
     }
 
     // Loops intill option 4 is used
@@ -42,7 +46,7 @@ int main(){
 
         switch (choice){
         case 1:
-            balence_inquiry();
+            balence_inquiry(ptr);
             break;
         
         case 2:
