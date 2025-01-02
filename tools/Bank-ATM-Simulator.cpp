@@ -17,11 +17,11 @@ bool login(){
     }
 }
 
-void balence_inquiry(int* ptr){
+int balence_inquiry(int* ptr){
     cout << "Your Balance Is: £" << &ptr << endl;
 }
 
-void deposit_money(int* ptr){
+int deposit_money(int* ptr){
     int deposit_amount = 0;
     cout << "Please input the amount of money you want to deposit: ";
     
@@ -29,7 +29,7 @@ void deposit_money(int* ptr){
     *ptr += deposit_amount;
 }
 
-void withdraw_money(int* ptr){
+int withdraw_money(int* ptr){
     int withdrawal_amount = 0;
     cout << "Please input the amount of money you want to withdraw: ";
     cin >> withdrawal_amount;
