@@ -33,7 +33,7 @@ void withdraw_money(int* ptr){
     int withdrawal_amount = 0;
     cout << "Please input the amount of money you want to withdraw: ";
     cin >> withdrawal_amount;
-    *ptr += withdrawal_amount;
+    *ptr -= withdrawal_amount;
 }
 
 int main(){
