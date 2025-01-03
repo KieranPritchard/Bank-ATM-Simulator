@@ -42,21 +42,23 @@ int main(){
     while (!login()){
     }
 
+    // Balence pointer
+    int balence = 1000;
+    int* ptr = &balence;
+
+    // Switch statement allows the user to access different functions of the program
+    int choice;
+
     // Loops intill option 4 is used
-    while (true){
+    while (choice != 4){
         // Displayed text
-        cout << "Please select your option:\n";
         cout << "(1) Balance Inquiry.\n";
         cout << "(2) Deposit Money.\n";
         cout << "(3) Withdraw Money.\n";
         cout << "(4) Log Out.\n";
 
-        // Balence pointer
-        int balence;
-        int* ptr = &balence;
-
-        // Switch statement allows the user to access different functions of the program
-        int choice;
+        cout << "Please select your option:\n";
+        cin >> choice;
 
         switch (choice){
         case 1:
