@@ -18,28 +18,29 @@ bool login(){
 }
 
 void balence_inquiry(int* ptr){
-    cout << "Your Balance Is: £" << *ptr << endl;
+    cout << "\nYour Balance Is: £" << *ptr << endl;
 }
 
 void deposit_money(int* ptr){
     int deposit_amount = 0;
-    cout << "Please input the amount of money you want to deposit: ";
+    cout << "\nPlease input the amount of money you want to deposit: ";
     
     cin >> deposit_amount;
     *ptr += deposit_amount;
-    cout << "Deposit Successful. Your Balance is £" << *ptr;
+    cout << "\nDeposit Successful. Your Balance is £" << *ptr;
 }
 
 void withdraw_money(int* ptr){
     int withdrawal_amount = 0;
-    cout << "Please input the amount of money you want to withdraw: ";
+    cout << "\nPlease input the amount of money you want to withdraw: ";
     cin >> withdrawal_amount;
     if(*ptr < 0){
         *ptr -= withdrawal_amount;
-        cout << "Withdrawal Successful. Your Balance is £" << *ptr;
+        cout << "\nWithdrawal Successful. Your Balance is £" << *ptr;
 
     } else{
-        cout << "Insuffient balance. Withdrawal Failed.";
+        cout << "\nInsuffient balance. Withdrawal Failed.";
+        withdraw_money(ptr);
     }
 }
 
@@ -59,17 +60,17 @@ int main(){
     // Loops intill option 4 is used
     while (choice != 4){
         // Displayed text
-        cout << "-----------------------------";
-        cout << "What would you like to-do.";
-        cout << "-----------------------------";
+        cout << "\n-----------------------------\n";
+        cout << "What would you like to-do.\n";
+        cout << "-----------------------------\n";
         cout << "(1) Balance Inquiry.\n";
         cout << "(2) Deposit Money.\n";
         cout << "(3) Withdraw Money.\n";
         cout << "(4) Log Out.\n";
-        cout << "-----------------------------";
-        cout << "Please select your option:";
+        cout << "-----------------------------\n";
+        cout << "Please select your option: ";
         cin >> choice;
-        cout << "-----------------------------";
+        cout << "\n-----------------------------";
 
         switch (choice){
         case 1:
@@ -85,11 +86,11 @@ int main(){
             break;
 
         case 4:
-            cout << "Thank you for your custom.";
+            cout << "\nThank you for your custom.";
             break;    
 
         default:
-            cout << "Invaild option. Please try again.";
+            cout << "\nInvaild option. Please try again.";
             break;
         }
     }
