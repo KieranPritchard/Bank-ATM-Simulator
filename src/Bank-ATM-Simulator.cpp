@@ -18,17 +18,17 @@ bool login(){
     }
 }
 
-void balence_inquiry(int* ptr){
-    cout << "\nYour Balance Is: £" << *ptr << endl;
+void balence_inquiry(int* balance){
+    cout << "\nYour Balance Is: £" << *balance << endl;
 }
 
-void deposit_money(int* ptr){
+void deposit_money(int* balance){
     int deposit_amount = 0;
     cout << "\nPlease input the amount of money you want to deposit: ";
     
     cin >> deposit_amount;
-    *ptr += deposit_amount;
-    cout << "\nDeposit Successful. Your Balance is £" << *ptr;
+    *balance += deposit_amount;
+    cout << "\nDeposit Successful. Your Balance is £" << *balance;
 }
 
 void withdraw_money(int* ptr){
@@ -40,7 +40,7 @@ void withdraw_money(int* ptr){
         cout << "\nWithdrawal Successful. Your Balance is £" << *ptr;
 
     } else{
-        cout << "\nInsuffient balance. Withdrawal Failed.";
+        cout << "\nInsuffient balance. Withdrawal Failed.\n";
         withdraw_money(ptr);
     }
 }
@@ -52,8 +52,7 @@ int main(){
     }
 
     // Balence pointer
-    int balence = 1000;
-    int* ptr = &balence;
+    int* balance = new int(1000);
 
     // Switch statement allows the user to access different functions of the program
     int choice;
@@ -75,19 +74,20 @@ int main(){
 
         switch (choice){
         case 1:
-            balence_inquiry(ptr);
+            balence_inquiry(balance);
             break;
         
         case 2:
-            deposit_money(ptr);
+            deposit_money(balance);
             break;
         
         case 3:
-            withdraw_money(ptr);
+            withdraw_money(balance);
             break;
 
         case 4:
             cout << "\nThank you for your custom.";
+            delete balance;
             break;    
 
         default:
