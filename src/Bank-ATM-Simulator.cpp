@@ -9,6 +9,7 @@ bool login(){
 
     cout << "Please input your pin number: ";
     cin >> pin_number;
+    cout << "\n";
 
     if(pin_number == 1234){
         return true;
@@ -60,7 +61,7 @@ int main(){
     // Loops intill option 4 is used
     while (choice != 4){
         // Displayed text
-        cout << "\n-----------------------------\n";
+        cout << "-----------------------------\n";
         cout << "What would you like to-do.\n";
         cout << "-----------------------------\n";
         cout << "(1) Balance Inquiry.\n";
