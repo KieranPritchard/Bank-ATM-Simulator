@@ -31,17 +31,18 @@ void deposit_money(int* balance){
     cout << "\nDeposit Successful. Your Balance is £" << *balance;
 }
 
-void withdraw_money(int* ptr){
+void withdraw_money(int* balance){
     int withdrawal_amount = 0;
     cout << "\nPlease input the amount of money you want to withdraw: ";
     cin >> withdrawal_amount;
-    if(*ptr < 0){
-        *ptr -= withdrawal_amount;
-        cout << "\nWithdrawal Successful. Your Balance is £" << *ptr;
-
-    } else{
+    if(withdrawal_amount > *balance){
         cout << "\nInsuffient balance. Withdrawal Failed.\n";
-        withdraw_money(ptr);
+        withdraw_money(balance);
+        cout << "\n";
+    } else{
+        *balance -= withdrawal_amount;
+        cout << "\nWithdrawal Successful. Your Balance is £" << *balance;
+        cout << "\n";
     }
 }
 
