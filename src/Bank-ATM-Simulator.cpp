@@ -18,7 +18,7 @@ bool login(){
 }
 
 void balence_inquiry(int* ptr){
-    cout << "Your Balance Is: £" << &ptr << endl;
+    cout << "Your Balance Is: £" << *ptr << endl;
 }
 
 void deposit_money(int* ptr){
