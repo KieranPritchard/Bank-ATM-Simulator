@@ -40,7 +40,7 @@ I successfully created a simulation of an ATM machine and improved my knowledge 
 
 ### Next Steps
 
-
+To continue expanding my knowledge of C++, by working on different projects. Then to refine my methods to start to take on devloping network and cyber security.
 
 ## How to Install and Run the Project
 
