@@ -1,12 +1,12 @@
 # Bank ATM Simulator
 
 <div align="center">
-    <img alt="GitHub Created At" src="https://img.shields.io/github/created-at/KieranPritchard/:repo">
-    <img alt="GitHub License" src="https://img.shields.io/github/license/KieranPritchard/:repo">
-    <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/t/KieranPritchard/:repo">
-    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/KieranPritchard/:repo">
-    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/KieranPritchard/:repo">
-    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/KieranPritchard/:repo">
+    <img alt="GitHub Created At" src="https://img.shields.io/github/created-at/KieranPritchard/Bank-ATM-Simulator">
+    <img alt="GitHub License" src="https://img.shields.io/github/license/KieranPritchard/Bank-ATM-Simulator">
+    <img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/t/KieranPritchard/Bank-ATM-Simulator">
+    <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/KieranPritchard/Bank-ATM-Simulator">
+    <img alt="GitHub language count" src="https://img.shields.io/github/languages/count/KieranPritchard/Bank-ATM-Simulator">
+    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/KieranPritchard/Bank-ATM-Simulator">
 </div>
 
 ## Project Description
@@ -42,9 +42,45 @@ I successfully created a simulation of an ATM machine and improved my knowledge 
 
 To continue expanding my knowledge of C++, by working on different projects. Then to refine my methods to start to take on devloping network and cyber security.
 
-## How to Install and Run the Project
-
 ## How to Use the Project
+
+1. **Clone The Repository:**
+    * This saves the project to your local device, you can do this with git.
+   ```bash
+   git clone https://github.com/KieranPritchard/Bank-ATM-Simulator.git
+   ```
+
+2. **Compile The Project:**
+    * Open the terminal, then navigate to the directory where the bash script is stored. then input this command into the terminal: `chmod +x build.sh`.
+    * Then copy the Bank-ATM-Simulator.cpp file into the same folder as the script and use this command:
+      ```
+      ./build.sh Bank-ATM-Simulator.cpp
+      ```
+    * This will give the code in executable format.
+   
+3. **Run The Program:**
+
+    * After successful compilation enter this command to run the program:
+      ```
+      ./Bank-ATM-Simulator.cpp
+      ```
+ 
+4. **Login:**
+
+    * When running, you will be prompted by the program to enter your pin to gain access.
+    * For the simulation its `1234`.
+    
+5. **Select an Option:**
+
+    * After you have logged in, you will see a menu with the following options:
+        *  **(1) Balance Inquiry** - This checks account balance.
+        *  **(2) Deposit Money** - Deposits funds in your account.
+        *  **(3) Withdraw Money** - Withdraws funds from your account, expect if the amount is more then what is in the account.
+        *  **(4) Log Out** - Log out of the program and exit.
+   
+6. **Log Out:**
+
+   * Choose option 4 to log out of the program
 
 ## Licenses
 
